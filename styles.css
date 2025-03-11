@@ -7,27 +7,53 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     padding: 10px 0;
-    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
 }
 
 .nav-links {
     list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: center;
+    gap: 20px;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    display: inline;
 }
 
 .nav-links a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    background: #ffb400;
+    color: black;
+    border-radius: 5px;
 }
 
 .hero {
@@ -189,6 +215,28 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.9);
+        width: 200px;
+        border-radius: 10px;
+        text-align: right;
+        padding: 10px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+
     .hero-content {
         text-align: center;
     }
