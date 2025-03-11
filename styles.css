@@ -7,15 +7,16 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85); /* 黑色半透明背景 */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1000; /* 确保 header 始终在最前面 */
     padding: 10px 0;
 }
 
+/* 🌟 导航栏样式 */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -215,26 +216,20 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
+    .navbar {
         flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        background: rgba(0, 0, 0, 0.9);
-        width: 200px;
-        border-radius: 10px;
-        text-align: right;
-        padding: 10px;
+        align-items: center;
     }
 
-    .nav-links li {
-        display: block;
-        margin-bottom: 10px;
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
-    
-    .nav-links.show {
-        display: flex;
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
     }
 
     .hero-content {
