@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.9);
     position: fixed;
     width: 100%;
     top: 0;
@@ -20,7 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin: auto;
     padding: 5px 0;
 }
@@ -35,7 +35,10 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .nav-links li {
@@ -46,8 +49,9 @@ header {
     text-decoration: none;
     color: white;
     font-size: 14px;
-    padding: 5px 8px;
+    padding: 5px 10px;
     transition: 0.3s ease-in-out;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -221,8 +225,9 @@ footer {
     }
 
     .nav-links {
-        flex-wrap: nowrap;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
         width: 100%;
     }
 
