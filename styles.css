@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.85);
     position: fixed;
     width: 100%;
     top: 0;
@@ -20,13 +20,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 90%;
     margin: auto;
     padding: 5px 0;
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -35,7 +35,7 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .nav-links li {
@@ -228,11 +228,11 @@ footer {
 
     .nav-links a {
         font-size: 12px;
-        padding: 5px;
+        padding: 4px;
     }
 
     .logo {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .hero {
