@@ -62,22 +62,19 @@ header {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding-left: 10%;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 10px 0; /* 增加 padding 避免文字被 header 遮挡 */
     color: white;
     font-size: 30px;
 }
 
+/* 🌟 调整 hero 文字 */
 .hero-content {
-    max-width: 500px;
-    text-align: left;
+    max-width: 600px;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
+/* 🌟 修正 Order Now 按钮 */
 .order-btn {
     background-color: #ffb400;
     border: none;
@@ -88,7 +85,11 @@ header {
     border-radius: 30px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    margin-top: 15px;
+    margin-top: 20px; /* 增加上间距 */
+}
+
+.order-btn:hover {
+    background-color: #ff9900;
 }
 
 .order-btn:hover {
@@ -222,18 +223,27 @@ footer {
     }
 
     .nav-links {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         text-align: center;
-        gap: 10px;
+        padding: 10px 0;
+        width: 100%;
     }
 
     .nav-links a {
-        display: block;
-        padding: 10px;
+        font-size: 14px;
+        padding: 8px;
+        display: inline-block;
     }
 
-    .hero-content {
-        text-align: center;
+    .hero {
+        font-size: 24px;
+        padding-top: 120px;
+    }
+
+    .order-btn {
+        font-size: 16px;
+        padding: 12px 25px;
     }
 
     .menu-items {
