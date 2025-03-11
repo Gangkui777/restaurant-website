@@ -7,27 +7,26 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.85); /* 黑色半透明背景 */
+    background: rgba(0, 0, 0, 0.9);
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000; /* 确保 header 始终在最前面 */
-    padding: 10px 0;
+    z-index: 1000;
+    padding: 5px 0;
 }
 
-/* 🌟 导航栏样式 */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 95%;
     margin: auto;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -36,7 +35,7 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .nav-links li {
@@ -46,8 +45,8 @@ header {
 .nav-links a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    padding: 10px 15px;
+    font-size: 14px;
+    padding: 5px 8px;
     transition: 0.3s ease-in-out;
 }
 
@@ -64,17 +63,15 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 10px 0; /* 增加 padding 避免文字被 header 遮挡 */
+    padding: 100px 10px 0;
     color: white;
     font-size: 30px;
 }
 
-/* 🌟 调整 hero 文字 */
 .hero-content {
     max-width: 600px;
 }
 
-/* 🌟 修正 Order Now 按钮 */
 .order-btn {
     background-color: #ffb400;
     border: none;
@@ -85,7 +82,7 @@ header {
     border-radius: 30px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    margin-top: 20px; /* 增加上间距 */
+    margin-top: 20px;
 }
 
 .order-btn:hover {
