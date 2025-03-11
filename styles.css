@@ -218,22 +218,24 @@ footer {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
     }
 
     .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        padding: 10px 0;
+        flex-wrap: nowrap;
+        justify-content: space-around;
         width: 100%;
     }
 
     .nav-links a {
-        font-size: 14px;
-        padding: 8px;
-        display: inline-block;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .logo {
+        font-size: 18px;
     }
 
     .hero {
